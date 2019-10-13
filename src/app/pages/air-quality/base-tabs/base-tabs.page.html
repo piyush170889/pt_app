@@ -1,0 +1,27 @@
+<ion-header no-border>
+    <ion-toolbar class="custom-toolbar-gradient" mode="ios">
+        <ion-title>
+            Air Quality Near Me
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <super-tabs>
+        <super-tabs-toolbar slot="top" class="custom-super-tabs">
+            <super-tab-button>
+                <ion-label>Near Me</ion-label>
+            </super-tab-button>
+            <super-tab-button>
+                <ion-label>Ranking</ion-label>
+            </super-tab-button>
+        </super-tabs-toolbar>
+        <super-tabs-container>
+            <super-tab>
+                <ion-nav [root]="nearMePage"></ion-nav>
+            </super-tab>
+            <super-tab>
+                <ion-nav [root]="rankingPage"></ion-nav>
+            </super-tab>
+        </super-tabs-container>
+    </super-tabs>
+</ion-content>

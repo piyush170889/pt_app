@@ -1,0 +1,19 @@
+.custom-toolbar-gradient {
+    --background: rgb(83, 202, 239);
+    --background: linear-gradient(179deg, rgba(83, 202, 239, 1) 0%, rgba(127, 163, 222, 1) 35%, rgba(160, 133, 209, 1) 100%);
+
+    ion-title {
+        color: white;
+    }
+}
+
+.custom-super-tabs {
+    background: rgb(83, 202, 239);
+    background: linear-gradient(179deg, rgba(83, 202, 239, 1) 0%, rgba(127, 163, 222, 1) 35%, rgba(160, 133, 209, 1) 100%);
+
+    super-tab-button {
+        ion-label {
+            color: white;
+        }
+    }
+}
