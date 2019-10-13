@@ -1,0 +1,84 @@
+ion-content {
+    --background: url('../../../assets/images/login-bg-image.png'), linear-gradient(179deg, rgba(83, 202, 239, 1) 0%, rgba(127, 163, 222, 1) 35%, rgba(160, 133, 209, 1) 100%);
+
+
+    .custom-image-wrapper {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 116px;
+
+        ion-img {
+            height: 172px;
+            width: 120px;
+        }
+    }
+
+    .login-form-wrapper {
+        margin: 100px 44px 0 42px;
+
+        .custom-email-wrapper {
+            background: white;
+            padding: 0 54px 0 42px;
+            border-radius: 28px;
+            border-color: white;
+        }
+
+        .custom-password-wrapper {
+            background: white;
+            padding: 0 54px 0 42px;
+            border-radius: 28px;
+            border-color: white;
+            margin-top: 18px;
+            margin-bottom: 22px;
+        }
+
+        .custom-wrapper-forgot-password {
+            margin-bottom: 40px;
+
+            ion-button {
+                --color: #FFFFFF;
+            }
+        }
+
+        .custom-sign-in {
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+
+            p {
+                color: white;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .custom-sign-in-wrapper {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 32px;
+
+        ion-button {
+            --background: white;
+            --color: #6BBCE9;
+            font-weight: bold;
+        }
+    }
+
+    .custom-social-wrapper {
+        display: table;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 32px;
+
+        .fb-image-wrapper {
+            display: table-cell;            
+        }
+
+        .g-image-wrapper {
+            display: table-cell;
+        }
+    }
+}

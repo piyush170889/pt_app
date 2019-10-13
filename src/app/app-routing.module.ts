@@ -11,6 +11,7 @@ const routes: Routes = [
 
     /* Air Quality Module routing links */
     { path: 'air-quality', loadChildren: './pages/air-quality/base-tabs/base-tabs.module#BaseTabsPageModule' },
+    { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
     /* End Air Quality Module routing links */
 ];
 @NgModule({
