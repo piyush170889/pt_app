@@ -1,0 +1,143 @@
+<ion-header no-border>
+  <ion-toolbar class="myplaces-toolbar ion-text-center">
+    <ion-title color="light">
+      My Places
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-class">
+
+  <ion-card (click)="openIndoorDetails()" class="outdoor-details-card" *ngFor="let i of [1,2,3,4,5]">
+    <ion-card-header style="padding-bottom: 0;">
+      <ion-card-title>
+
+        <ion-grid class="ion-no-margin ion-no-padding">
+          <ion-row>
+            <!-- <ion-col size="8" style="font-size: 12px; text-align: left"> -->
+            <ion-col size="8" class="font-lg-dark">
+              <strong>Living Room, White Plains, NY</strong>
+            </ion-col>
+            <ion-col size="4" class="font-lg-medium ion-text-right">
+              <strong>08:52 PM EST</strong>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-card-title>
+
+      <ion-card-subtitle>
+        <ion-grid class="ion-no-margin ion-no-padding">
+          <ion-row>
+            <ion-col size="3">
+              <p class="font-md-dark ion-no-margin ion-no-padding">
+                <strong>INDOOR</strong>
+              </p>
+              <p class="font-md-medium ion-no-margin ion-no-padding">
+                <strong>US AQI</strong>
+              </p>
+            </ion-col>
+
+            <ion-col size="3">
+              <p class="font-sm-dark ion-no-margin ion-no-padding ion-text-right">AWAIR DEVICE</p>
+              <p class="font-sm-dark ion-no-margin ion-no-padding ion-text-right">
+                <strong>PM 2.5 | 9 UG/M3</strong>
+              </p>
+            </ion-col>
+
+            <ion-col size="3">
+              <p class="font-md-dark ion-no-margin ion-no-padding">
+                <strong>OUTDOOR</strong>
+              </p>
+              <p class="font-md-medium ion-no-margin ion-no-padding">
+                <strong>US AQI</strong>
+              </p>
+            </ion-col>
+            <ion-col size="3">
+              <p class="font-sm-dark ion-no-margin ion-no-padding ion-text-right">AWAIR DEVICE</p>
+              <p class="font-sm-dark ion-no-margin ion-no-padding ion-text-right">
+                <strong>PM 2.5 | 9 UG/M3</strong>
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-grid class="ion-no-padding">
+        <ion-row>
+          <ion-col size="6" class="ion-text-center ion-align-self-center">
+            <ion-label class="label-lg" color="primary"><strong>0</strong></ion-label>
+          </ion-col>
+          <ion-col size="6" class="ion-text-center ion-align-self-center">
+            <ion-label class="label-lg" color="primary"><strong>35</strong></ion-label>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="4" offset="1" class="aqi-status ion-text-center">
+            <ion-label color="success">Good</ion-label>
+          </ion-col>
+          <ion-col size="4" offset="2" class="aqi-status ion-text-center">
+            <ion-label color="warning">Moderate</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <p class="font-md-medium ion-text-center ion-padding">OUTDOOR DETAILS</p>
+
+      <ion-row>
+        <ion-col color="dark" size="4" class="label-sm" (click)="changeDaySelected(1)"
+          [ngStyle]="{ 'font-weight': (daySelected==1) ? 'bold' : 'normal'  }">
+          <ion-label color="dark">Friday</ion-label>
+        </ion-col>
+        <ion-col color="dark" size="4" class="label-sm" (click)="changeDaySelected(2)"
+          [ngStyle]="{ 'font-weight': (daySelected==2) ? 'bold' : 'normal'  }">
+          <ion-label color="dark">Saturday</ion-label>
+        </ion-col>
+        <ion-col color="dark" size="4" class="label-sm" (click)="changeDaySelected(3)"
+          [ngStyle]="{ 'font-weight': (daySelected==3) ? 'bold' : 'normal'  }">
+          <ion-label color="dark">Sunday</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12">
+          <div class="outdoor-details-part">
+            <p class="font-sm-light">12 PM</p>
+            <p class="font-sm-success"><strong>0-50</strong></p>
+            <p class="ion-no-margin"><img src="../../assets/icon/Asset 38.png" style="width: 15px"></p>
+            <p class="font-sm-dark"><strong>58&deg;</strong></p>
+          </div>
+          <div class="outdoor-details-part">
+            <p class="font-sm-light">12 PM</p>
+            <p class="font-sm-success"><strong>0-50</strong></p>
+            <p class="ion-no-margin"><img src="../../assets/icon/Asset 39.png" style="width: 15px"></p>
+            <p class="font-sm-dark"><strong>72&deg;</strong></p>
+          </div>
+          <div class="outdoor-details-part">
+            <p class="font-sm-light">12 PM</p>
+            <p class="font-sm-aqimid"><strong>100-150</strong></p>
+            <p class="ion-no-margin"><img src="../../assets/icon/Asset 40.png" style="width: 15px"></p>
+            <p class="font-sm-dark"><strong>73&deg;</strong></p>
+          </div>
+          <div class="outdoor-details-part">
+            <p class="font-sm-light">12 PM</p>
+            <p class="font-sm-danger"><strong>150-200</strong></p>
+            <p class="ion-no-margin"><img src="../../assets/icon/Asset 42.png" style="width: 15px"></p>
+            <p class="font-sm-dark"><strong>58&deg;</strong></p>
+          </div>
+          <div class="outdoor-details-part">
+            <p class="font-sm-light">12 PM</p>
+            <p class="font-sm-danger"><strong>150-200</strong></p>
+            <p class="ion-no-margin"><img src="../../assets/icon/Asset 42.png" style="width: 15px"></p>
+            <p class="font-sm-dark"><strong>58&deg;</strong></p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

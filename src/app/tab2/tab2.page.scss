@@ -1,0 +1,29 @@
+.myplaces-toolbar {
+  --background: #958fd5;
+}
+
+.outdoor-details-part {
+  width: 20%;
+  float: left;
+  text-align: center;
+  img {
+    margin-left: 38%;
+  }
+}
+
+.bg-class {
+  --background: linear-gradient(
+    to bottom,
+    rgba(149, 143, 213, 1) 0%,
+    rgba(149, 143, 213, 1) 21%,
+    rgba(160, 133, 209, 1) 64%,
+    rgba(127, 163, 222, 1) 99%,
+    rgba(83, 202, 239, 1) 100%
+  ) !important;
+  overflow-y: scroll;
+}
+
+.outdoor-details-card {
+  --background: #fff;
+  border-radius: 15px;
+}
